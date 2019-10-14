@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="top|center"
+
+    >
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update Record"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:paddingLeft="10dp"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:paddingBottom="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <EditText
+            android:id="@+id/etId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Id"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Name"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/etContactNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Contact Number"
+            android:inputType="textEmailAddress"
+            />
+
+        <EditText
+            android:id="@+id/etAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Address"
+            android:inputType="text" />
+
+    </LinearLayout>
+
+
+
+
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="321dp"
+        android:layout_height="wrap_content"
+        android:onClick="AddRecordFunction"
+        android:text="Update Record"
+        android:textSize="20dp"
+        android:inputType="textCapWords"
+        />
+
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="321dp"
+        android:layout_height="wrap_content"
+        android:onClick="AddRecordFunction"
+        android:text="Delete Record"
+        android:textSize="20dp"
+        android:inputType="textCapWords"
+        />
+
+
+    <Button
+        android:id="@+id/btnClear"
+        android:layout_width="321dp"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:inputType="textCapWords"
+        android:text="Clear" />
+
+
+</LinearLayout>
